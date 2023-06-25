@@ -23,6 +23,7 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
 
   <body class="page">
@@ -53,8 +54,6 @@
           </ul>
         </nav>
 
-        <!------------------------- Addres navigation ------------------->
-
         <address class="address-menu">
           <ul class="address-list list">
             <li class="address-item">
@@ -70,12 +69,100 @@
             </li>
           </ul>
         </address>
+
+        <button type="button" class="mob-menu-open js-open-menu">
+          <svg class="mob-menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu js-menu-container">
+        <div class="container mob-menu_container">
+          <button class="mob-menu_close-btn js-close-menu">
+            <svg class="mob-menu_close-icon" width="8" height="8">
+              <use href="./images/icons.svg#close-icon"></use>
+            </svg>
+          </button>
+
+          <ul class="mob-menu_nav-list">
+            <li class="mob-menu_nav-item list">
+              <a
+                href="./index.html"
+                class="section-title mob-menu_nav-link link"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu_nav-item list">
+              <a
+                href="./portfolio.html"
+                class="section-title mob-menu_nav-link mob-current link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu_nav-item list">
+              <a href="" class="section-title mob-menu_nav-link link"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+
+          <div class="mob-menu_contacts-wrap">
+            <ul class="mob-menu_address-list list">
+              <li class="mob-menu_address-item">
+                <a href="tel:+110001111111" class="mob-menu_phone-text link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-menu_address-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-menu_email-text link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <div class="mob-menu_soc-wrap">
+              <ul class="mob-menu_soc-list list">
+                <li class="social-list-item">
+                  <a href="" class="social-list-link">
+                    <svg class="social-list-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-item">
+                  <a href="" class="social-list-link">
+                    <svg class="social-list-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-item">
+                  <a href="" class="social-list-link">
+                    <svg class="social-list-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list-item">
+                  <a href="" class="social-list-link">
+                    <svg class="social-list-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
     <!---------------------- Services filter --------------->
     <main>
-      <section class="filter-menu">
+      <!-- <section class="filter-menu">
         <div class="container">
           <h2 class="visually-hidden">Menu Filter</h2>
 
@@ -95,11 +182,11 @@
             <li>
               <button type="button" class="filter-btn">Marketing</button>
             </li>
-          </ul>
+          </ul> -->
 
-          <!------------------------ Service links --------------------->
+      <!------------------------ Service links --------------------->
 
-          <ul class="list card-list service-card-list">
+      <!-- <ul class="list card-list service-card-list">
             <li class="service-card-item">
               <a href="" class="link filter-card-link">
                 <div class="filter-overlay-container">
@@ -292,11 +379,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!----------------- Section 4 Footer ------------------>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-box">
         <div class="footer-logo-container">
           <a href="./index.html" class="footer-logo-text logo link"
@@ -360,6 +447,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
